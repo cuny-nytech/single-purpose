@@ -1,5 +1,16 @@
-# Choose Your Own Adventure
+# Single-Purpose Site
 
-Create a [Choose Your Own Adventure](http://en.wikipedia.org/wiki/Choose_Your_Own_Adventure#Format) game. [Here](https://writer.inklestudios.com/stories/musgraveritual) is a fancy web-based example, but creating yours as text-only, command-line based is fine.
+Create a single-purpose website, which tells the user one thing, a la [Is It Christmas?](https://isitchristmas.com/). It can be something based on:
 
-Submit a pull request to this repository with all the necessary files, and replace this README with a description of your game and how to run it. Make sure to give the user instructions in the game about how to play, get help, etc.
+* The current date
+* The time
+* The weather
+* Whether Kanye West's most recent tweets mention Kanye West
+* *etc*
+
+Surprise and delight us – creativity is encouraged. **Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
+
+* All the necessary files
+* In the README:
+    * Setup instructions
+    * A link to the live app on Heroku
