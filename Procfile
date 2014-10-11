@@ -1,1 +1,1 @@
-web: bundle exec ruby -p $PORT -c ./config/isthe2018worldcuphappening.rb
+web: bundle exec ruby -p $PORT
