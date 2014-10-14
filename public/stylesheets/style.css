@@ -1,0 +1,52 @@
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: #ccc;
+  font-size: 5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  background: #ccc;
+}
+
+.weatherIcon{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.city {
+  float: left;
+  width: 360px;
+  height: 450 px;
+  background: #ccc;
+  margin-top: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.city .cityImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.hidden {
+  display: hidden;
+}
+

@@ -1,0 +1,19 @@
+<doctype html>
+<html>
+  <head>
+    <title> Simple Sinatra App </title>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./javascripts/script.js"></script>
+    <link href="./stylesheets/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="city_list" data-cities="belgrade berlin chicago paris san_francisco new_york"></div>
+    <header>Weather App</header> 
+    <%= yield %>
+
+     <footer> Copyright Pedro de S  | 2014</footer>
+  </body>
+</html>

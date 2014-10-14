@@ -1,0 +1,11 @@
+
+  <% @conditions.each do |condition| %>
+    <div class="city">    
+      <p>City :<%= condition['display_location']['city'] %></p>
+      <p>Temperature : <%= condition['temp_f'] %></p>
+      <p>Humidity :<%= condition['relative_humidity'] %></p>
+      <p> <img src="<%= condition['icon_source'] %>"  />
+      <p> <img src="<%= condition['picture'] %>" class="cityImage"  />
+
+    </div>
+  <% end %>

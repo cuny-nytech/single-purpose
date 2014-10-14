@@ -1,0 +1,2 @@
+/usr/bin/ruby2.0 extconf.rb 
+/usr/bin/ruby2.0: invalid option -P  (-h will show valid options) (RuntimeError)
