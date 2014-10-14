@@ -1,5 +1,5 @@
 $: << File.dirname(__FILE__)
-require 'home'
+require 'weather'
 
 run App.new
 
