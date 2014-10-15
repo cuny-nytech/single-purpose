@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="/home.css" rel="stylesheet">
+  <title>nystream</title>
+  <script language="JavaScript" type="text/javascript">
+/*    function startTime() {
+      var today=new Date();
+      var h= today.getHours() % 12;
+      var m=today.getMinutes();
+      var s=today.getSeconds();
+      // add a zero in front of numbers<10
+      h=checkHour(h);
+      m=checkTime(m);
+      s=checkTime(s);
+      document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+      t=setTimeout('startTime()',500);
+    }
+
+    function checkTime(i) {
+      if (i<10)
+      {
+        i="0" + i;
+      }
+      return i;
+    }
+
+    function checkHour(i) {
+      if (i % 12 == 0) {
+        i = 12;
+      }
+      if (i < 10) {
+        i="0" + i;
+      }
+      return i;
+    } */ 
+    function reloadpic() {}
+    <% if @go %>
+    var t = 1000;
+    var image = "http://207.251.86.238/cctv" + <%= @currentcam %> + ".jpg"
+    function reloadpic() {
+      document.getElementById("pic").src= image + "?math=" +
+        new Date().getTime();
+      setTimeout("reloadpic()", t);
+    }
+    <% end %> 
+    function both() {
+    reloadpic();
+//  startTime();
+    }
+  </script>
+</head>
+<body onload="both()">
+  <div id="background">
+    <img src="http://41.media.tumblr.com/413aa6e7f2644d788d32b3d1a634474f/tumblr_mq76doVggn1sa9b5no1_500.jpg" id="im">
+  </div>
+  <div id="txt"></div>
+  <%= yield %>
+</body>
+</html>
