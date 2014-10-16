@@ -1,4 +1,4 @@
-# Single-Purpose Site
+# Gabriela Voll's Single-Purpose Site
 
 This single-purpose app, tell you whether or not it is party time. It is indeed party time after 5pm and before 9am. from 9am-5pm it is not party time. 
 
