@@ -1,16 +1,14 @@
-# Single-Purpose Site
+# Gabriela Voll's Single-Purpose Site
 
-Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that tells the user one thing, a la [isitchristmas.com](https://isitchristmas.com/). Surprise and delight us – creativity is encouraged. Example inputs:
+This single-purpose app, tell you whether or not it is party time. It is indeed party time after 5pm and before 9am. from 9am-5pm it is not party time. 
 
-* The current date
-* The time
-* The weather
-* Whether Kanye West's most recent tweets mention Kanye West
-* *etc*
+little confused about the instructions, but: 
+you just download the files
+run install bundler ( to utilize the versions of sinatra and ruby specified)
+heroku create
+git push heroku master
+heroku open 
+and the website should be up at whatever randomly generated website they give you 
 
-**Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
 
-* All the necessary files
-* In the README:
-    * Setup instructions
-    * A link to the live app on Heroku
+link to the live app on Heroku: http://infinite-depths-7258.herokuapp.com/
