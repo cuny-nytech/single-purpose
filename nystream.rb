@@ -37,9 +37,9 @@ get '/weather' do
   erb :weather, layout: :weather
 end
 
+#streaming page, looks at current camera
 get '/:currentcam' do
   @currentcam = params[:currentcam]
   @nextcam = cameralist.sample
-  @go = 1
   erb :stream2
 end
