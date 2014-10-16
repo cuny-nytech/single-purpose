@@ -1,11 +1,13 @@
 
   <% @conditions.each do |condition| %>
     <div class="city">    
-      <p>City :<%= condition['display_location']['city'] %></p>
-      <p>Temperature : <%= condition['temp_f'] %></p>
-      <p>Humidity :<%= condition['relative_humidity'] %></p>
-      <p> <img src="<%= condition['icon_source'] %>"  />
-      <p> <img src="<%= condition['picture'] %>" class="cityImage"  />
-
+      <p>
+        <img src='<%= File.expand_path("/images/#{condition.icon}.gif", settings.public_folder) %>' class="cityImage" align="right" />
+        City :<%= condition.city %><br />
+        Temperature : <%= condition.temperature %><br />
+        Humidity :<%= condition.humidity %><br />
+      </p>
+      <p> <img src='<%= File.expand_path("/images/#{condition.city}.jpeg", settings.public_folder) %>' class="city" /> </p> 
     </div>
   <% end %>
+

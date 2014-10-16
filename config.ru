@@ -1,5 +1,4 @@
-$: << File.dirname(__FILE__)
-require 'weather'
+require './weather'
 
-run Sinatra::Application
+run App
 

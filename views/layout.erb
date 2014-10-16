@@ -14,6 +14,9 @@
     <header>Weather App</header> 
     <%= yield %>
 
-     <footer> Copyright Pedro de S  | 2014</footer>
+    <footer>
+      <p> <%= @conditions[0].updated_at.strftime("Last update %T  %F") %> </p>
+      <p>Copyright Slavisa Djukic  | 2014</p>
+    </footer>
   </body>
 </html>

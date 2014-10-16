@@ -20,14 +20,16 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  height: 60px;
+  height: 70px;
   background: #ccc;
+  font-size: .9em;
 }
 
 .weatherIcon{
   display: block;
   margin-top: 15px;
   margin-bottom: 15px;
+  float: right;
 }
 
 .city {
@@ -36,8 +38,8 @@ footer {
   height: 450 px;
   background: #ccc;
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .city .cityImage {
