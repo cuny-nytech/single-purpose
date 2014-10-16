@@ -1,16 +1,35 @@
-# Single-Purpose Site
+# ruby-getting-started
 
-Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that tells the user one thing, a la [isitchristmas.com](https://isitchristmas.com/). Surprise and delight us – creativity is encouraged. Example inputs:
+A barebones Rails app, which can easily be deployed to Heroku.
 
-* The current date
-* The time
-* The weather
-* Whether Kanye West's most recent tweets mention Kanye West
-* *etc*
+This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
 
-**Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
+## Running Locally
 
-* All the necessary files
-* In the README:
-    * Setup instructions
-    * A link to the live app on Heroku
+Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+
+```sh
+$ git clone git@github.com:heroku/ruby-getting-started.git
+$ cd ruby-getting-started
+$ bundle install
+$ rake db:create db:migrate
+$ foreman start web
+```
+
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
+```sh
+$ heroku create
+$ git push heroku master
+$ heroku run rake db:migrate
+$ heroku open
+```
+
+## Documentation
+
+For more information about using Ruby on Heroku, see these Dev Center articles:
+
+- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+
