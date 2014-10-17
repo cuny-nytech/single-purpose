@@ -13,10 +13,14 @@
     <div id="city_list" data-cities="belgrade berlin chicago paris san_francisco new_york"></div>
     <header>Weather App</header> 
     <%= yield %>
-
+    
     <footer>
-      <p> <%= @conditions[0].updated_at.strftime("Last update %T  %F") %> </p>
-      <p>Copyright Slavisa Djukic  | 2014</p>
+    <p> 
+    <img src="./images/wu_logo.png" class="logo" />
+    <%= @conditions[0].updated_at.strftime("Last update %T  %F") %> 
+    </p>
+      
+      <p>Created by Slavisa Djukic  | 2014</p>
     </footer>
   </body>
 </html>
