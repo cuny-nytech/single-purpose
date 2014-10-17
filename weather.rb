@@ -13,7 +13,7 @@ API_KEY = ENV['WEATHER']
 DataMapper::Logger.new($stdout, :debug)
 
 # A Postgres connection
-DataMapper.setup(:default, 'postgres://pedro1:pjer1976@localhost/weather')
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
 class WeatherData
   include DataMapper::Resource

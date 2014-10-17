@@ -1,4 +1,4 @@
 require './weather'
 
-run App
+run App pedro1 pjer1976
 
