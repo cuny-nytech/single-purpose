@@ -1,6 +1,6 @@
 require 'sinatra'  # to make the website
 require 'nokogiri' # to parse noaa.gov xml
-require 'open-uri' # reading xml file from internet
+require 'open-uri' # to search through xml file from the web
 
 # partial working traffic camera list
 cameralist = '461 465 401 586 582 701 540 673 502 247 261
