@@ -1,35 +1,6 @@
-# ruby-getting-started
+To run this app you need 'sinatra' and 'nokogiri'.  You can build it locally with sinatra or heroku.
 
-A barebones Rails app, which can easily be deployed to Heroku.
+This app has two purposes.  The first purpose is that it will stream a random traffic camera from NYC.  The stream also
+functions as a link to another random traffic camera stream.  The tail end of the url is the number of the traffic camera.  If you want to find the number of a specific camera, see : http://nyctmc.org/.
 
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
-
-## Running Locally
-
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ rake db:create db:migrate
-$ foreman start web
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
-```
-
-## Documentation
-
-For more information about using Ruby on Heroku, see these Dev Center articles:
-
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-
+The second purpose is that the app tell's you the weather in NYC.  It reads an xml file from noaa.gov and just gives you the a no frills presentation of the weather.  To access the weather from the streaming portion, there is a link in the upper left hand corner.
