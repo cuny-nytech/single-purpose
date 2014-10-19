@@ -1,0 +1,4 @@
+Lint/Void:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
