@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Sonic Boom</title>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
+      <audio id="myAudio" controls>
+          <source src="airgear.ogg" type="audio/ogg">
+          <source src="airgear.mp3" type="audio/mpeg">
+      </audio>
+
+      <script type="text/javascript">
+            function aud_play_pause()
+            {
+               var myAudio = document.getElementById("myAudio");
+               if(myAudio.paused)
+               {
+                  myAudio.play();
+               }
+               else
+               {
+                  myAudio.pause();
+               }
+             }
+       </script>
+       <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+       <script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
+       <script> 
+         $("document").ready(function() {
+         $("#slideshow").cycle()
+         })
+       </script>
+    </head>
+   
+    <body id="b">
+      <div id="time">
+      <strong>
+        <span id="countdown"> </span> until Sonic Boom is released!
+        <script type="text/javascript">
+            var target_date = new Date("Nov 11, 2014").getTime();
+            var days, hours, minutes, seconds;
+            var countdown = document.getElementById("countdown");
+            
+            setInterval(function () {
+                  var current_date = new Date().getTime();
+                  var seconds_left = (target_date - current_date) / 1000;
+
+                  days = parseInt(seconds_left / 86400);
+                  seconds_left = seconds_left % 86400;
+
+                  hours = parseInt(seconds_left / 3600);
+                  seconds_left = seconds_left % 3600;
+
+                  minutes = parseInt(seconds_left / 60);
+                  seconds = parseInt(seconds_left % 60);
+
+                  countdown.innerHTML = days + " days, " + hours + " hours, "
+                  + minutes + " minutes, " + seconds + " seconds";
+            }, 1000)
+         </script>
+       </strong>
+      </div>
+    
+     <img src="cover.jpg" id="Box" alt="Box Cover"/>
+     
+     <div id="slideshow">
+         <img src="sbc1.png"/>
+         <img src="sbc2.png"/>
+         <img src="sbc3.png"/>
+         <img src="sbc4.png"/>
+         <img src="sbc5.png"/>
+     </div>
+
+     <audio id="myAudio" controls>
+          <source src="airgear.ogg" type="audio/ogg">
+          <source src="airgear.mp3" type="audio/mpeg">
+     </audio>
+
+     <script type="text/javascript">
+            function aud_play_pause()
+            {
+               var myAudio = document.getElementById("myAudio");
+               if(myAudio.paused)
+               {
+                  myAudio.play();
+               }
+               else
+               {
+                  myAudio.pause();
+               }
+             }
+      </script>
+    </body>
+</html>

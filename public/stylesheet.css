@@ -1,0 +1,25 @@
+#b
+{
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#time
+{
+  font-size: 40px;
+  color: red;
+}
+
+#Box
+{
+  border: 3px solid;
+  border-radius: 5px;
+}
+
+#slideshow
+{
+  display: block;
+  float: right;
+  border: 5px solid;
+}
