@@ -22,4 +22,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  sinatra
   rubocop
