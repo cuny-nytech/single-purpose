@@ -1,16 +1,7 @@
-# Single-Purpose Site
+# Single-Purpose Site  
 
-Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that tells the user one thing, a la [isitchristmas.com](https://isitchristmas.com/). Surprise and delight us – creativity is encouraged. Example inputs:
+This app lets you know if it is time for the 2018 World Cup, which will happen in Russia, yet.
 
-* The current date
-* The time
-* The weather
-* Whether Kanye West's most recent tweets mention Kanye West
-* *etc*
+(http://www.fifa.com/worldcup/russia2018/)
 
-**Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
 
-* All the necessary files
-* In the README:
-    * Setup instructions
-    * A link to the live app on Heroku
