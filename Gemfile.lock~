@@ -112,6 +112,7 @@ GEM
 
 PLATFORMS
   ruby
+  unknown
 
 DEPENDENCIES
   bundler
