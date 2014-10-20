@@ -1,6 +1,7 @@
 
 <% 
 t= Time.now
+t= t.getlocal
 if (t.hour >17 || t.hour<4)
 	word= "YAAAAAAAASS!"
 	colorid="colorful"
@@ -46,7 +47,7 @@ t.strftime("it is %T")
 	background-color: #FFFFFF;
 }
 #sleep {
-	background-color: #660000; 
+	background-color: #000099; 
 }
 </style>
 
