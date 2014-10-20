@@ -11,4 +11,4 @@ heroku open
 and the website should be up at whatever randomly generated website they give you 
 
 
-link to the live app on Heroku: http://warm-harbor-2349.herokuapp.com/
+link to the live app on Heroku: http://infinite-depths-7258.herokuapp.com/
