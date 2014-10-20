@@ -1,6 +1,7 @@
 
 <% 
-t= Time.now() 
+t= Time.now()
+t= t.localtime
 if (t.hour >17 || t.hour<9)
 	word= "YAAAAAAAASS!"
 	colorid="colorful"
