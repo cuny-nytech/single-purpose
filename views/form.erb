@@ -16,28 +16,37 @@ t.strftime("it is %T")
 
 %>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"> </script>
-<script>
-	$(document).ready(function () {
-		setInterval(function() {
-			$("#colorful").animate( {
-				backgroundColor: "#FF0000" }, 200)
-			.animate( {backgroundColor: '#FF00FF' }, 200)
-			.animate( {backgroundColor: '#0000FF'}, 200)
-			.animate( {backgroundColor: '#00FF00'}, 200)
-			.animate( {backgroundColor: '#FFFF00'}, 200); 
-			}, 1000);
-		});
-</script>
+<!DOCTYPE html>
+<html>
+	<head>
+    	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Is It Party Time</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"> </script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			setInterval(function() {
+				$("#colorful").animate( {
+					backgroundColor: "#FF0000" }, 200)
+				.animate( {backgroundColor: '#FF00FF' }, 200)
+				.animate( {backgroundColor: '#0000FF'}, 200)
+				.animate( {backgroundColor: '#00FF00'}, 200)
+				.animate( {backgroundColor: '#FFFF00'}, 200); 
+				}, 1000);
+			});
+
+	</script>
 
 
-<body id= "<%=colorid%>" >
-	<div style="margin: auto; text-align:center;margin-top:150px">
-		<p> Is it party time? </p> 
-		<p style="font-size:80px"> <%= word %> </p>
-		<p> Current Time is: <%= t %> </p>
-	</div>
-</body>
+    </head>
+    <body id= "<%=colorid%>" >
+		<div style="margin: auto; text-align:center;margin-top:150px">
+			<p> Is it party time? </p> 
+			<p style="font-size:80px"> <%= word %> </p>
+			<p> Current Time is: <%= t %> </p>
+		</div>
+    </body>
 
 <style>
 #colorful {
