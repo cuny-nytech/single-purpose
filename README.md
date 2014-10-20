@@ -1,6 +1,7 @@
 # Single-Purpose Site
 
-## Created by Slavisa Djukic <Slavisa.Djukic15@myhunter.cuny.edu>
+## Created by Slavisa Djukic 
+<Slavisa.Djukic15@myhunter.cuny.edu>
 
 ### About the app
 
