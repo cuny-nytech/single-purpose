@@ -1,11 +1,14 @@
 
 <% 
 t= Time.now
-if (t.hour >17 || t.hour<9)
+if (t.hour >17 || t.hour<4)
 	word= "YAAAAAAAASS!"
 	colorid="colorful"
+elsif (t.hour<9 && t.hour>4)
+	word="No, you should sleep."
+	colorid="sleep"
 else 
-	word= "No."
+	word= "No. It is time to twerk."
 	colorid="not"
 end
 %>
@@ -39,6 +42,9 @@ end
 }
 #not {
 	background-color: #FFFFFF;
+}
+#sleep {
+	background-color: #660000; 
 }
 </style>
 
