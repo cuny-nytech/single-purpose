@@ -111,6 +111,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   rails (= 4.1.4)
+  rake
   rubocop
   sinatra
   unicorn
