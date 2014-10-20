@@ -1,0 +1,29 @@
+<body>
+	<div style = ' text-align: center'>
+		<p style = 'margin: 100px;font-weight: bold; font-size: 70px'>
+			<%=
+				time = Time.now
+				weekend = time.strftime('%w').to_i == 0 || time.strftime('%w').to_i == 6
+				if(weekend)
+					result = "YAYY! It's weekend" 
+				elsif (time.strftime('%w').to_i == 5)
+					result = "Yessss... Today is Friday"
+				else 
+					result = ":( It's NOT Weekend Yet!!"
+       			end
+			%>
+			<a><img src = "http://img.photobucket.com/albums/v318/DeadlyCrafts/Animation20.gif"/></a>
+		</p>
+
+		<p style = 'padding: 0px;font-size: 35px; font-family: sans-serif'>
+		<%=	unless weekend			
+				days = 5 - time.strftime('%w').to_i
+				Hours_left = 23 - time.strftime('%H').to_i
+				Min_left = 59 - time.strftime('%M').to_i
+				sec_left = 60 - time.strftime('%S').to_i
+				"Time Left for Weekend: #{days} days #{Hours_left} hours #{Min_left} Mins #{sec_left} sec"
+			end	
+		%>
+		</p>
+	</div>
+</body>

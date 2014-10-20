@@ -1,0 +1,22 @@
+# Single-Purpose Site
+
+This is Mirna Single-Purpose Site. It tells you whether it is weekend yet or not. If not, it shows the time left for the weekend.
+
+Unfortunately, I wasn't able to deploy to heroku. I tried a lot!
+It works fine using shotgun but when I run foreman start web(locally), it gives me errors. 
+10:26:56 web.1  | started with pid 9921
+10:26:58 web.1  | I, [2014-10-20T10:26:58.380347 #9921]  INFO -- : listening on addr=0.0.0.0:5000 fd=9
+10:26:58 web.1  | I, [2014-10-20T10:26:58.386167 #9921]  INFO -- : worker=0 spawning...
+10:26:58 web.1  | I, [2014-10-20T10:26:58.391788 #9921]  INFO -- : master process ready
+10:26:58 web.1  | I, [2014-10-20T10:26:58.415012 #9926]  INFO -- : worker=0 spawned pid=9926
+10:26:58 web.1  | I, [2014-10-20T10:26:58.434284 #9926]  INFO -- : Refreshing Gem list
+config.ru:4:in `require': cannot load such file -- /home/mirna/single-purpose/config/environment (LoadError)
+10:26:58 web.1  | 	from config.ru:4:in `block in <main>'
+10:26:58 web.1  | 	from /home/mirna/.rvm/gems/ruby-2.0.0-p576/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+10:26:58 web.1  | 	from /home/mirna/.rvm/gems/ruby-2.0.0-p576/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+10:26:58 web.1  | 	from config.ru:1:in `new'
+10:26:58 web.1  | 	from config.ru:1:in `<main>'
+10:26:58 web.1  | 	from /home/mirna/.rvm/gems/ruby-2.0.0-p576/gems/unicorn-4.8.3/lib/unicorn.rb:48:in `eval'
+10:26:58 web.1  | 	from /home/mirna/.rvm/gems/ruby-2.0.0-p576/gems/unicorn-4.8.3/lib/unicorn.rb:48:in `block in builder'
+
+Any HELP is appreciated
