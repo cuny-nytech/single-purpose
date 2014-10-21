@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'rubocop'
+group :development, :test do
+  gem 'rubocop'
+end
