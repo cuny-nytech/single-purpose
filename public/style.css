@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+html {
+    padding-top: 5em;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 16px;
+    color: #2E2633;
+    text-align: center;
+}
