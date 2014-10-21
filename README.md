@@ -14,3 +14,5 @@ Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that 
 * In the README:
     * Setup instructions
     * A link to the live app on Heroku
+
+Check out the "Hello World" Sinatra app [here](https://github.com/cuny-nytech/sinatra-example).
