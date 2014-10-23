@@ -3,7 +3,7 @@
 t= Time.now
 t=t.getlocal("-04:00")
 if (t.hour >17 || t.hour<4)
-	word= "YAAAAAAAASS!"
+	word= "YAAAAASS!"
 	colorid="colorful"
 elsif (t.hour<9 && t.hour>=4)
 	word="No, you should sleep."
@@ -42,9 +42,9 @@ t.strftime("it is %T")
     </head>
     <body id= "<%=colorid%>" >
 		<div style="margin: auto; text-align:center;margin-top:150px">
-			<p> Is it party time? </p> 
-			<p style="font-size:80px"> <%= word %> </p>
-			<p> Current Time is: <%= t %> </p>
+			<p style="font-size: 30px"> Is it party time? </p> 
+			<p style="font-size:100px"> <%= word %> </p>
+			<p style="font-size: 30px"> Current Time is: <%= t %> </p>
 		</div>
     </body>
 
