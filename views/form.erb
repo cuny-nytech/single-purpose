@@ -5,12 +5,18 @@ t=t.getlocal("-04:00")
 if (t.hour >17 || t.hour<4)
 	word= "YAAAAASS!"
 	colorid="colorful"
+	fontsize="100px"
+	gifadd="http://i2.wp.com/i.imgur.com/OLBwlDo.gif?zoom=2&w=650"
 elsif (t.hour<9 && t.hour>=4)
-	word="No, you should sleep."
+	word="No, go the fuck to sleep."
 	colorid="sleep"
+	fontsize="70px"
+	gifadd="http://b.vimeocdn.com/ts/165/538/165538918_640.jpg"
 else 
 	word= "No. It is time to twerk."
 	colorid="not"
+	fontsize="80px"
+	gifadd="http://i.imgur.com/Tib2gJo.gif"
 end
 t.strftime("it is %T")
 
@@ -28,13 +34,9 @@ t.strftime("it is %T")
 	<script type="text/javascript">
 		$(document).ready(function () {
 			setInterval(function() {
-				$("#colorful").animate( {
-					backgroundColor: "#FF0000" }, 200)
-				.animate( {backgroundColor: '#FF00FF' }, 200)
-				.animate( {backgroundColor: '#0000FF'}, 200)
-				.animate( {backgroundColor: '#00FF00'}, 200)
-				.animate( {backgroundColor: '#FFFF00'}, 200); 
-				}, 1000);
+				$("#colorful").animate( {backgroundColor: '#000000'}, 100)
+				.animate( {backgroundColor: '#FFFFFF'}, 100); 
+				}, 200);
 			});
 
 	</script>
@@ -42,10 +44,11 @@ t.strftime("it is %T")
 
     </head>
     <body id= "<%=colorid%>" >
-			<div style="height:70%; width:90%;padding-top:5%;margin:auto; text-align:center">
+			<div style="height:70%; width:90%;padding-top:1%;margin:auto; text-align:center">
 				<p style="font-size: 30px;line-height:80%"> Is it party time? </p> 
-				<p style="font-size:100px; line-height:80%; margin:50px 0px 30px 0px"> <%= word %> </p>
-				<p style="font-size: 30px;margin:10px 0px 10px 0px;line-height:80%"> Current Time is: <%= t %> </p>
+				<p style="font-size:<%=fontsize%>; line-height:80%; margin:30px 0px 30px 0px"> <%= word %> </p>
+				<p style="font-size: 30px;margin:10px 0px 20px 0px;line-height:80%"> Current Time is: <%= t %> </p>
+				<img height="350px" src="<%= gifadd%>">
 			</div>
 		
     </body>
@@ -59,7 +62,7 @@ t.strftime("it is %T")
 	background-color: #FFFFFF;
 }
 #sleep {
-	background-color: #000099; 
+	background-color: #444499; 
 }
 html,body {
 	height: 100%;
