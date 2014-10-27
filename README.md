@@ -1,18 +1,21 @@
-# Single-Purpose Site
+1. Clone the repo locally, and cd into the directory.
 
-Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that tells the user one thing, a la [isitchristmas.com](https://isitchristmas.com/). Surprise and delight us – creativity is encouraged. Example inputs:
+2. Install the bundle
 
-* The current date
-* The time
-* The weather
-* Whether Kanye West's most recent tweets mention Kanye West
-* *etc*
+        ```bash
+        # run this command in your console
+        bundle install
+        ```
 
-**Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
+3. Install the Heroku Toolbelt from [here](https://toolbelt.heroku.com/)
 
-* All the necessary files
-* In the README:
-    * Setup instructions
-    * A link to the live app on Heroku
+4. Deploy to Heroku
 
-Check out the "Hello World" Sinatra app [here](https://github.com/cuny-nytech/sinatra-example).
+        ```bash
+        # creating the app on Heroku
+        heroku create
+        # push the latest version of the code to Heroku
+        git push heroku master
+        ```
+
+5. Open the app: https://paydaychecker.herokuapp.com
