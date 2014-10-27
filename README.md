@@ -1,5 +1,3 @@
-# Manoj Gurung Pay-Day Checker App.
-
 1. Clone the repo locally, and cd into the directory.
 
 2. Install the bundle
@@ -18,8 +16,6 @@
         heroku create
         # push the latest version of the code to Heroku
         git push heroku master
-        # get the web URL of Heroku app
-        heroku apps:info
         ```
 
-5. Open the app: https://limitless-coast-2428.herokuapp.com/
+5. Open the app: https://paydaychecker.herokuapp.com
