@@ -1,7 +1,12 @@
 
 <% 
 t= Time.now
-t=t.getlocal("-05:00")
+if (t.month >10 || t.month < 3)
+	t=t.getlocal("-05:00")
+else 
+	t=t.getlocal("-04:00")
+end
+
 if (t.hour >16 || t.hour<4)
 	word= "YAAAAASS!"
 	colorid="colorful"
