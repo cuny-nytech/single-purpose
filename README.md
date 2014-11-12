@@ -6,5 +6,6 @@ This app takes the first letter of your first and last name and produces a super
 Please only use letters in the first letter of your first and last name. If you use any other character, 
 you will get a message asking you to try again.
 If you accidently click "super me!" without putting in any information, you will get a message saying, "no entry detected"
-===============
+
 Enjoy!
+https://super-me.herokuapp.com/
