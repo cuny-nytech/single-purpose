@@ -1,18 +1,10 @@
-# Single-Purpose Site
+superhero-name
+==============
+* Enter your full name into the textbox.
+* If you use only your first name, your super hero first and last name will be based on your first name only.
+* This app takes the first letter of your first and last name and produces a superhero name. 
+* Please only use letters in the first letter of your first and last name. If you use any other character, 
+you will get a message asking you to try again.
+* If you accidently click "super me!" without putting in any information, you will get a message saying, "no entry detected"
 
-Create a single-purpose website using [Sinatra](http://www.sinatrarb.com/) that tells the user one thing, a la [isitchristmas.com](https://isitchristmas.com/). Surprise and delight us – creativity is encouraged. Example inputs:
-
-* The current date
-* The time
-* The weather
-* Whether Kanye West's most recent tweets mention Kanye West
-* *etc*
-
-**Deploy the application to Heroku**, and **submit a pull request** to this repository. Include:
-
-* All the necessary files
-* In the README:
-    * Setup instructions
-    * A link to the live app on Heroku
-
-Check out the "Hello World" Sinatra app [here](https://github.com/cuny-nytech/sinatra-example).
+Enjoy!  https://super-me.herokuapp.com/
