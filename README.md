@@ -7,7 +7,7 @@ To run locally:
 
 Download the files
 
-in Terminal: run install bundler ( to utilize the versions of sinatra and ruby specified)
+in Terminal: install bundler ( to utilize the versions of sinatra and ruby specified)
 
 in Terminal: heroku create
 
